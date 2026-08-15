@@ -242,9 +242,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = mobileNav.classList.contains('open');
       if (isOpen) {
         mobileNav.classList.remove('open');
+        mobileMenuBtn.classList.remove('active');
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
       } else {
         mobileNav.classList.add('open');
+        mobileMenuBtn.classList.add('active');
         mobileMenuBtn.setAttribute('aria-expanded', 'true');
       }
     });
@@ -252,6 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.querySelectorAll('a, button').forEach((item) => {
       item.addEventListener('click', () => {
         mobileNav.classList.remove('open');
+        mobileMenuBtn.classList.remove('active');
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
       });
     });
