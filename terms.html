@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,69 +15,45 @@
   <!-- Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="ambient-background" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-3"></div>
-  </div>
-
   <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/images/app_logo.png" alt="TalkWide" width="36" height="36">
-        <span>Talk<span class="gradient-text">Wide</span></span>
+      <a href="index.html" class="brand-logo" aria-label="TalkWide Home">
+        <img src="assets/images/app_logo.png" alt="TalkWide Logo" width="36" height="36">
+        <span>Talk<span class="brand-highlight">Wide</span></span>
       </a>
 
       <nav>
         <ul class="nav-links">
           <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#demo">App Preview</a></li>
           <li><a href="index.html#how-it-works">How It Works</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html" class="active">Terms</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html" class="active">Terms of Service</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle></svg>
-        </button>
-        <a href="index.html#download" class="btn btn-primary btn-sm">Get App</a>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu" aria-expanded="false">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
+        <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
       </div>
-    </div>
-
-    <!-- Mobile Slide-down Menu -->
-    <div id="mobile-nav" class="mobile-nav">
-      <ul class="mobile-nav-links">
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#demo">App Preview</a></li>
-        <li><a href="index.html#how-it-works">How It Works</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-      </ul>
     </div>
   </header>
 
-  <main class="section" style="padding-top: 140px;">
-    <div class="container" style="max-width: 900px;">
-      
-      <div class="legal-content">
+  <main class="section">
+    <div class="container">
+      <div class="legal-container">
         <div class="legal-header">
           <div class="badge-pill">
             <span>📜 Terms & Conditions</span>
           </div>
           <h1>Terms of Service</h1>
-          <p>Last Updated: August 15, 2026 • Effective Immediately</p>
+          <p>Last Updated: August 16, 2026 • Effective Immediately</p>
         </div>
 
         <div class="legal-body">
@@ -87,48 +63,49 @@
 
           <h2>1. Agreement to Terms</h2>
           <p>
-            By creating an account or accessing TalkWide, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use our services.
+            By creating an account or using TalkWide, you agree to be bound by these Terms and our Privacy Policy. If you do not agree, you may not access our services.
           </p>
 
           <h2>2. Eligibility</h2>
           <p>
-            You must be at least <strong>13 years of age</strong> to use TalkWide. By using the app, you represent that you meet this age requirement.
+            You must be at least <strong>13 years of age</strong> to use TalkWide. By using the app, you represent and warrant that you meet this age requirement.
           </p>
 
           <h2>3. Community Guidelines & Code of Conduct</h2>
-          <p>TalkWide is a community built for authentic language learning and cultural exchange. You agree NOT to:</p>
+          <p>TalkWide is built exclusively for authentic language learning, cultural exchange, and mutual respect. You agree NOT to:</p>
           <ul>
-            <li>Harass, intimidate, bully, stalk, or abuse other users.</li>
-            <li>Post or transmit unsolicited commercial messages, spam, or promotional material.</li>
-            <li>Share sexually explicit, violent, defamatory, hateful, or illegal content.</li>
-            <li>Impersonate any person or misrepresent your affiliation with any entity.</li>
-            <li>Use the voice calling feature for obscene, abusive, or unlawful behavior.</li>
-            <li>Attempt to reverse-engineer, decompile, or compromise the app's security.</li>
+            <li>Harass, bully, stalk, threaten, or abuse any other user.</li>
+            <li>Send spam, commercial solicitations, or fraudulent messages.</li>
+            <li>Share sexually explicit, violent, hateful, or unlawful content.</li>
+            <li>Impersonate any person or provide false identity information.</li>
+            <li>Use the voice calling feature for disruptive, obscene, or unlawful purposes.</li>
+            <li>Attempt to bypass app security, reverse-engineer, or scrape user data.</li>
           </ul>
 
-          <h2>4. Account Safety & Termination</h2>
+          <h2>4. Account Safety & Moderation</h2>
           <p>
-            You are responsible for safeguarding your login credentials. We reserve the right to suspend or permanently terminate your account without prior notice if you violate these Terms or engage in conduct that harms the community.
+            You are responsible for keeping your login credentials confidential. We reserve the right to suspend or permanently ban any account that violates these Terms or harms the community.
           </p>
 
           <h2>5. Intellectual Property</h2>
           <p>
-            The TalkWide name, logo, design system, source code, and graphics are the exclusive property of TalkWide and are protected by international copyright and trademark laws.
+            The TalkWide name, logo, software, graphics, and visual design are the exclusive property of TalkWide and are protected under copyright and trademark laws.
           </p>
 
-          <h2>6. Disclaimer of Warranties</h2>
+          <h2>6. Disclaimer & Limitation of Liability</h2>
           <p>
-            TalkWide is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. We do not guarantee uninterrupted or error-free operation.
+            TalkWide is provided on an "as is" and "as available" basis without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages resulting from your use of the platform.
           </p>
 
           <h2>7. Contact Information</h2>
-          <p>For questions regarding these Terms, contact us at:</p>
-          <div style="background:var(--bg-surface-elevated); padding:16px 20px; border-radius:12px; border:1px solid var(--border-glass);">
-            <p style="margin-bottom:0;">Email: <a href="mailto:talkwide.app@gmail.com" style="color:var(--primary); font-weight:600;">talkwide.app@gmail.com</a></p>
+          <p>If you have any questions regarding these Terms, please reach out to us at:</p>
+          <div class="legal-card-box">
+            <p style="margin-bottom:0;">
+              <strong>Email:</strong> <a href="mailto:talkwide.app@gmail.com">talkwide.app@gmail.com</a>
+            </p>
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
@@ -137,9 +114,9 @@
       <div class="footer-bottom" style="border-top:none; padding-top:0;">
         <p>&copy; <span class="current-year">2026</span> TalkWide. All rights reserved.</p>
         <div style="display:flex; gap:20px;">
-          <a href="index.html" style="color:var(--text-muted);">Home</a>
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html" style="color:var(--primary); font-weight:600;">Terms of Service</a>
-          <a href="privacy.html" style="color:var(--text-muted);">Privacy Policy</a>
         </div>
       </div>
     </div>
